@@ -1,0 +1,63 @@
+.intro-fundo {
+  padding: 70px;
+}
+
+.introducao {
+  max-width: 1200px;
+  padding: 30px 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 4rem;
+  margin-bottom: 30px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+  max-width: 50ch;
+}
+
+/* Img */
+.vela {
+  border-radius: 12px;
+}
+
+/* Responsivo */
+
+@media (max-width: 1000px) {
+  .introducao {
+    gap: 60px;
+  }
+
+  .introducao h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .introducao p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introducao h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .introducao p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,22 @@
+.rodape {
+  max-width: 1200;
+  padding: 30px 15px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  box-shadow: 0px 0px 1px;
+  background: #141414;
+}
+
+.rodape-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.rodape-container h3 {
+  font-size: 0.7rem;
+  line-height: 1.125rem;
+  color: white;
+}
