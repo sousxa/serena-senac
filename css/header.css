@@ -1,11 +1,15 @@
 :root {
   --text-color: #141414;
   --fundo-1: #f5f5f5;
+  --botao: #dedede;
+  --logo: #000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #f5f5f5;
-    --fundo-1: #141414;
+    --text-color: #eee;
+    --fundo-1: rgba(38, 38, 38, 1);
+    --botao: rgba(22, 22, 22, 0.56);
+    --logo: #eee;
   }
 }
 
@@ -17,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 1px;
+  background: var(--fundo-1);
 }
 
 .header-menu {
@@ -37,7 +42,7 @@
 }
 
 .header a:hover {
-  background: var(--fundo-1);
+  background: var(--botao);
   border-radius: 8px;
 }
 
