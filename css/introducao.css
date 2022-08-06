@@ -1,18 +1,19 @@
 :root {
   --texto-2: #525252;
   --texto-1: #141414;
-  --fundo-primario: #fff;
+  --fundo-intro: #fff;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --texto-2: #a1a1a1;
     --texto-1: #fff;
-    --fundo-primario: rgba(38, 38, 38, 0.96);
+    --fundo-intro: #2e2e2e;
   }
 }
 
 .intro-fundo {
-  background: var(--fundo-primario);
+  background: var(--fundo-intro);
   padding: 70px;
 }
 

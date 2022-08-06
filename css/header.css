@@ -1,27 +1,28 @@
 :root {
   --text-color: #141414;
-  --fundo-1: #f5f5f5;
+  --fundo-nav: #f5f5f5;
   --botao: #dedede;
   --logo: #000;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #eee;
-    --fundo-1: rgba(38, 38, 38, 1);
+    --fundo-nav: #262626;
     --botao: rgba(22, 22, 22, 0.56);
     --logo: #eee;
   }
 }
 
 .header {
-  max-width: 1200;
+  max-width: 100%;
   padding: 30px 15px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 1px;
-  background: var(--fundo-1);
+  background: var(--fundo-nav);
 }
 
 .header-menu {
@@ -61,7 +62,7 @@
   }
 
   .header a {
-    background: var(--fundo-1);
+    background: var(--fundo-nav);
     border-radius: 8px;
   }
 }

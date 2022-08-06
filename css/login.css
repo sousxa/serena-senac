@@ -1,0 +1,126 @@
+:root {
+  --texto-login: #525252;
+  --box: #f5f5f5;
+  --fundo-login: #fff;
+  --color-input: #000;
+  --svg: url(../img/email.svg);
+  --svg-locker: url(../img/pass.svg);
+  --color-a: #525252;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --texto-login: #eee;
+    --box: #141414;
+    --fundo-login: rgba(38, 38, 38, 0.96);
+    --color-input: #eee;
+    --svg: url(../img/emailbranca.svg);
+    --svg-locker: url(../img/passbranca.svg);
+    --color-a: #eee;
+  }
+}
+
+body {
+  background: var(--fundo-login);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+
+.box {
+  display: grid;
+  position: flex;
+  grid-auto-columns: 1fr;
+  background: var(--box);
+  max-width: 100%;
+  padding: 50px;
+  margin-top: 180px;
+  border-radius: 5px;
+}
+
+.input {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  padding: 50px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--texto-login);
+  outline: 0;
+  display: grid;
+  color: var(--color-input);
+}
+
+.confirm {
+  display: grid;
+  justify-items: center;
+}
+
+button {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  background: #a1a1a1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #525252;
+}
+
+.cadastre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #a1a1a1;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--color-a);
+}
+
+.titulo-login {
+  display: grid;
+  place-content: start;
+  margin-left: 50px;
+  max-width: 100%;
+  color: var(--texto-login);
+}
+
+
+#email {
+  background-image: var(--svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1rem;
+  padding-left: 1.2rem;
+}
+
+
+#senha {
+  background-image: var(--svg-locker);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1rem;
+  padding-left: 1.2rem;
+}

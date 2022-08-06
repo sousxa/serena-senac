@@ -1,21 +1,23 @@
 :root {
   --texto-2-ctt: #525252;
   --texto-1-ctt: #141414;
-  --fundo-1-ctt: #fff;
+  --fundo-ctt: #fff;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --texto-3-ctt: #fff;
     --texto-2-ctt: #a1a1a1;
     --texto-1-ctt: #fff;
-    --fundo-1-ctt: rgba(38, 38, 38, 0.96);
+    --fundo-ctt: #2e2e2e;
   }
 }
 
 .info-fundo {
-  background: var(--fundo-1-ctt);
+  background: var(--fundo-ctt);
   padding: 120px;
 }
+
 .info {
   max-width: 1200px;
   padding: 30px 15px;
@@ -67,6 +69,7 @@
   .ctt-container h2 {
     font-size: 2.2rem;
   }
+
   .ctt-container p {
     font-size: 1.3rem;
   }
@@ -76,5 +79,4 @@
   }
 }
 
-@media (max-width: 800px) {
-}
+@media (max-width: 800px) {}
