@@ -1,0 +1,47 @@
+input{
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--cor-4);
+  outline: 0;
+  display: grid;
+  transition: 0.3s;
+}
+
+input:hover{
+  border-bottom-color: var(--cor-2);
+}
+
+.button {
+  font-size: 1.2rem;
+  color: var(--cor-5);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  background: var(--cor-3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: var(--cor-2);
+}
+
+.checkbox + .label-checkbox:before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: var(--svg-checkbox-vazia);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  transition: 0.3s;
+} 
+
+.checkbox:checked + .label-checkbox:before{
+  background-image: var(--svg-checkbox-confirm);
+  }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Loja de Velas Aromáticas e Óleos essencias orgânicos">
   <title>Serena</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
   <header>
     <nav class="header">
-      <a href="./index.html">
+      <a href="index.html">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.19 10.26" width="128px"
           height="50px" fill="var(--logo)">
           <path
@@ -38,15 +38,16 @@
         <h2 class="titulo-login">Entre na sua conta</h2>
         <form action="">
           <div class="input">
-            <input type="text" name="email" id="email" placeholder="E-mail" required fill="var(--svg)">
 
-            <input class="pass" type="password" name="senha" id="senha" placeholder="Senha" required>
+            <input class="mode-input" type="text" name="email" placeholder="E-mail" id="email" required >
+
+            <input class="mode-input" type="password" name="senha" id="senha" placeholder="Senha" required>
           </div>
           <div class="confirm">
-            <button>Login</button>
+            <button class="button">Login</button>
             <div class="cadastre">
-              <a href="./cadastro.html">Cadastre-se</a>
-              <a href="./">Esqueceu a senha?</a>
+              <a class="links" href="cadastro.html">Cadastre-se</a>
+              <a class="links" href="./">Esqueceu a senha?</a>
             </div>
           </div>
       </div>
