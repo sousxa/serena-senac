@@ -1,0 +1,34 @@
+:root {
+  --svg-email: url(../img/email.svg);
+  --svg-locker: url(../img/pass.svg);
+  --svg-cep: url(../img/location_on.svg);
+  --svg-telefone: url(../img/call.svg);
+  --svg-user: url(../img/person.svg);
+  --svg-search: url(../img/search.svg);
+  --svg-checkbox-vazia: url(../img/check_box_outline_blank.svg);
+  --svg-checkbox-confirm: url(../img/check_box.svg);
+  --svg-store-off: url(../img/store_mall_directory.svg);
+  --svg-store-on: url(../img/store_mall_directory-preencher.svg);
+  --svg-user-off: url(../img/person_outline-vazio-26.svg);
+  --svg-user-on: url(../img/person-preenchido.svg);
+  --svg-bag-off: url(../img/shopping_cart-vazio.svg);
+  --svg-bag-on: url(../img/shopping_cart-preencher.svg);
+  --svg-filter-black: url(../img/filter-icon-black.svg);
+  --svg-filter-white: url(../img/filter-icon-white.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --svg-email: url(../img/emailbranca.svg);
+    --svg-locker: url(../img/passbranca.svg);
+    --svg-cep: url(../img/location_on_white.svg);
+    --svg-telefone: url(../img/call_white.svg);
+    --svg-user: url(../img/person_white.svg);
+    --svg-store-off: url(../img/store_mall_directory-white.svg);
+    --svg-store-on: url(../img/store_mall_directory-preencher-white.svg);
+    --svg-user-on: url(../img/person_white.svg);
+    --svg-user-off: url(../img/person_outline-white.svg);
+    --svg-bag-off: url(../img/shopping_cart-vazio-white.svg);
+    --svg-bag-on: url(../img/shopping_cart-preencher-white.svg);
+  }
+}

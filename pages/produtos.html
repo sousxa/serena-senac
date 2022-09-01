@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loja de Velas Aromáticas e Óleos essencias orgânicos">
+  <title>Serena</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="header">
+      <a href="index.html">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.19 10.26" width="128px"
+          height="50px" fill="var(--logo)">
+          <path
+            d="M4.66,3c0-1.72-3-2.24-2.93-.27s4,2.24,3.59,4.2C5.44,9,2.42,9.58.85,8.71A16.47,16.47,0,0,1,.52,6.92l.37-.1C1,8.52,4.18,9.65,4.3,7.29,4.42,5.38.45,5.06.79,3,.55,1.26,3.44.58,4.84,1.19c0,.44.09.92.19,1.7Z" />
+          <path
+            d="M10.77,7.91C6.92,12.19,4.38,3.8,9,3.52c1.06-.1,2.41,1.48,1.6,2.26-.24,0-1.78.15-3.21.2,0,2.3,1.89,2.85,3.2,1.66ZM8.7,4c-.55,0-1.09.51-1.26,1.48.66-.14,2,.31,2.34-.27A1.1,1.1,0,0,0,8.7,4Z" />
+          <path
+            d="M14.31,8.93H11.55V8.59c1.43.22.63-2.61.83-3.4,0-.79-.05-.83-.75-.91V4a6.8,6.8,0,0,0,1.69-.49V4.8c.63-1.63,3.2-1.63,1.82,0-.34.19-.53-.4-.86-.33-1.15,0-1,2.44-1,3.24s.06.85,1,.92Z" />
+          <path
+            d="M20.31,7.91c-3.85,4.28-6.39-4.11-1.78-4.39,1.07-.1,2.41,1.48,1.6,2.26-.24,0-1.78.15-3.21.2,0,2.3,1.89,2.85,3.2,1.66ZM18.24,4c-.55,0-1.09.51-1.25,1.48.65-.14,2,.31,2.33-.27A1.1,1.1,0,0,0,18.24,4Z" />
+          <path
+            d="M24.53,8.93V8.59c.7-.07.77-.15.77-1,.15-1.8,0-4.73-2.42-2.76.19.82-.59,4,.78,3.73v.34H21.07V8.59c.79-.08.86-.13.86-.92-.19-.74.56-3.51-.73-3.39V4a6.94,6.94,0,0,0,1.68-.47v.94c1.2-1.19,3.4-1.35,3.37,1,.18.74-.57,3.4.76,3.2v.34Z" />
+          <path
+            d="M31.58,9.07a.92.92,0,0,1-.86-.76c-1.1,1.12-2.82.91-2.9-.71-.14-1.31,2.37-1.47,2.88-2C31,4,29,3.37,28.76,5.09c-.36.8-1.42-.35-.48-.73,5.4-3.45,2,5,4.19,3.78l.12.34ZM30.7,6c-.59.37-1.86.53-1.85,1.38.06,1.16,1.25,1.08,1.85.49Z" />
+        </svg></a>
+        <ul class="header-menu">
+          
+          <abbr title="Produtos">
+            <li><a class="nav-item" href="produtos.html" id="store-mall">⠀</a></li></abbr>
+            
+            <div class="dropdown-menu">
+              <button class="nav-item" id="user-btn" onclick="window.location.href= 'login.html'" type="button">⠀</button>
+              <div class="itens-dropdown">
+                <a class="border-list" href="login.html">Login</a>
+                <a href="cadastro.html">Cadastrar</a>
+              </div>
+            </div>
+            
+            <abbr title="Carrinho">
+              <li><a href="#" id="bag">⠀</a></li></abbr>
+              
+            </ul>
+          </nav>
+        </header>
+        
+        
+        <section class="produto-geral">
+
+          <div class="box-filter">
+            <div class="boxfilterpadding">
+              <form action="/">
+                <h3>Tamanhos</h3>
+                <div class="filtertype1">
+                  <input class="checkbox" id="grande" type="checkbox">
+                  <label class="label-checkbox"for="grande">Grande 180g</label>
+            
+            <input class="checkbox" id="media" type="checkbox">
+            <label class="label-checkbox" for="media">Média 100g</label>  
+            
+            <input class="checkbox" id="pequena" type="checkbox">
+            <label class="label-checkbox" for="pequena">Pequena 55g</label>  
+          </form>
+        </div>
+        <form action="/">
+          <h3>Essências</h3>
+          <div class="filtertype1">
+            <input class="checkbox" id="lavanda" type="checkbox">
+            <label class="label-checkbox" for="lavanda">Lavanda</label>
+            
+            <input class="checkbox" id="canela" type="checkbox">
+            <label class="label-checkbox" for="canela">Canela</label>  
+            
+            <input class="checkbox" id="baunilha" type="checkbox">
+            <label class="label-checkbox" for="baunilha">Baunilha</label>  
+            
+            <input class="checkbox" id="mel-limao" type="checkbox">
+            <label class="label-checkbox" for="mel-limao">Mel e Limão</label>  
+            
+            <input class="checkbox" id="citronela" type="checkbox">
+            <label class="label-checkbox" for="citronela">Citronela</label>
+            
+          </form>
+        
+
+      <form action="">
+        <h3>Faixa de preço</h3>
+        <div class="filtertype2">
+          <div class="slider">
+            <div class="show-value">
+              <span id="current-value">30</span>
+            </div>
+            <input type="range" id="custom-slider" min="30" max="200" value="30" step="1">
+            <div class="range">
+              <div>R$30</div>
+              <div>R$200</div>
+            </div>
+          </div>
+        </div>
+      </form>
+        <div class="aplicarfiltro">
+          <button class="button aplicarfiltro" id="filtro">Aplicar</button>
+        </div>
+      </div>      
+
+      <div class="search">
+        <form action="/">
+          <input class="search-input" type="text" id="search" name="search" placeholder="Busque aqui...">
+        </form>
+      </div>
+
+  </section>
+<script src="../js/script.js"></script>
+</body>
