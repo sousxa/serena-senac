@@ -33,38 +33,61 @@
         </svg></a>
     </nav>
 
-    <main class="container">
-      <div class="box-cadastrar">
-        <h2>Crie sua Conta</h2>
-        <form action="">
-          <div class="input">
-            <input class="formulario" type="text" name="nome" id="user" placeholder="Nome de usuário" required maxlength="50">
+    <main>
+      <form action="/">
+        <div class="fundo-box">
+          <div class="box-inputs">
 
-            <input class="formulario" type="text" name="email-cadastro" id="email-cadastro" placeholder="exemplo@email.com" required
-              maxlength="50">
+            <div class="titulo-inputs">
+              <h2>Crie sua conta</h2>
+            </div>
+            <div class="nome custom">
+              <input class="inputs" type="text" required id="nome">
+              <label for="nome">Nome completo</label>
+            </div>
 
-            <input class="formulario" type="tel" name="telefone" id="telefone" placeholder="Tefelone com DDD" required maxlength="15">
+            <div class="email custom">
+              <input class="inputs" type="text" required id="email-cadastro">
+              <label for="email-cadastro">E-mail</label>
+            </div>
 
-            <input class="formulario" type="tel" name="CEP" id="CEP" placeholder="CEP" required maxlength="15">
+            <div class="tell custom">
+              <input class="inputs" type="number" required id="tell-cadastro">
+              <label for="tell-cadastro">Telefone ou Whatsapp</label>
+            </div>
 
-            <input class="formulario" type="password" name="nome" id="password" placeholder="Senha" required>
+            <div class="cep custom">
+              <input class="inputs" type="number" required id="cep-cadastro">
+              <label for="cep-cadastro">CEP</label>
+            </div>
 
-            <input class="formulario" type="password" name="nome" id="confirm_password" placeholder="Confirmar senha" required>
+            <div class="password custom">
+              <input class="inputs" type="password" required id="pass-cadastro" minlength="6">
+              <label for="pass-cadastro">Criar senha</label>
+            </div>
+
+            <div class="pass-confirm custom">
+              <input class="inputs" type="password" required id="pass-confirm-cadastro">
+              <label for="pass-confirm-cadastro">Confirmar senha</label>
+            </div>
+
             <div class="checkbox-box">
               <div class="termos">
-                <input class="checkbox" type="checkbox" id="termos" name="termos">
-                <label class="label-checkbox" for="termos">Li e aceito os <a class="terms-links" href="./">termos de serviço.</a></label>
+                <input type="checkbox" class="checkbox" id="termos" name="termos">
+                <label for="termos" class="label-checkbox">Li e aceito os <a class="terms-links" href="./"> termos de
+                    serviço.</a></label>
               </div>
             </div>
 
-          </div>
-          <div class="confirm">
-            <button class="button" onclick="window.location.href= 'login.html'" type="button">Cadastrar</button>
-          </div>
-      </div>
+            <button class="botao" type="submit" onclick="window.location.href='login.html'">Cadastrar</button>
 
+
+
+          </div>
+        </div>
       </form>
     </main>
+
 
   </header>
 

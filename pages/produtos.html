@@ -31,91 +31,189 @@
           <path
             d="M31.58,9.07a.92.92,0,0,1-.86-.76c-1.1,1.12-2.82.91-2.9-.71-.14-1.31,2.37-1.47,2.88-2C31,4,29,3.37,28.76,5.09c-.36.8-1.42-.35-.48-.73,5.4-3.45,2,5,4.19,3.78l.12.34ZM30.7,6c-.59.37-1.86.53-1.85,1.38.06,1.16,1.25,1.08,1.85.49Z" />
         </svg></a>
-        <ul class="header-menu">
-          
-          <abbr title="Produtos">
-            <li><a class="nav-item" href="produtos.html" id="store-mall">⠀</a></li></abbr>
-            
-            <div class="dropdown-menu">
-              <button class="nav-item" id="user-btn" onclick="window.location.href= 'login.html'" type="button">⠀</button>
-              <div class="itens-dropdown">
-                <a class="border-list" href="login.html">Login</a>
-                <a href="cadastro.html">Cadastrar</a>
-              </div>
-            </div>
-            
-            <abbr title="Carrinho">
-              <li><a href="#" id="bag">⠀</a></li></abbr>
-              
-            </ul>
-          </nav>
-        </header>
-        
-        
-        <section class="produto-geral">
+      <ul class="header-menu">
 
-          <div class="box-filter">
-            <div class="boxfilterpadding">
-              <form action="/">
-                <h3>Tamanhos</h3>
-                <div class="filtertype1">
-                  <input class="checkbox" id="grande" type="checkbox">
-                  <label class="label-checkbox"for="grande">Grande 180g</label>
-            
-            <input class="checkbox" id="media" type="checkbox">
-            <label class="label-checkbox" for="media">Média 100g</label>  
-            
-            <input class="checkbox" id="pequena" type="checkbox">
-            <label class="label-checkbox" for="pequena">Pequena 55g</label>  
-          </form>
-        </div>
-        <form action="/">
-          <h3>Essências</h3>
-          <div class="filtertype1">
-            <input class="checkbox" id="lavanda" type="checkbox">
-            <label class="label-checkbox" for="lavanda">Lavanda</label>
-            
-            <input class="checkbox" id="canela" type="checkbox">
-            <label class="label-checkbox" for="canela">Canela</label>  
-            
-            <input class="checkbox" id="baunilha" type="checkbox">
-            <label class="label-checkbox" for="baunilha">Baunilha</label>  
-            
-            <input class="checkbox" id="mel-limao" type="checkbox">
-            <label class="label-checkbox" for="mel-limao">Mel e Limão</label>  
-            
-            <input class="checkbox" id="citronela" type="checkbox">
-            <label class="label-checkbox" for="citronela">Citronela</label>
-            
-          </form>
-        
+        <abbr title="Produtos">
+          <li><a class="nav-item" href="produtos.html" id="store-mall">⠀</a></li>
+        </abbr>
 
-      <form action="">
-        <h3>Faixa de preço</h3>
-        <div class="filtertype2">
-          <div class="slider">
-            <div class="show-value">
-              <span id="current-value">30</span>
-            </div>
-            <input type="range" id="custom-slider" min="30" max="200" value="30" step="1">
-            <div class="range">
-              <div>R$30</div>
-              <div>R$200</div>
-            </div>
+        <div class="dropdown-menu">
+          <button class="nav-item" id="user-btn" onclick="window.location.href= 'login.html'" type="button">⠀</button>
+          <div class="itens-dropdown">
+            <a class="border-list" href="login.html">Login</a>
+            <a href="cadastro.html">Cadastrar</a>
           </div>
         </div>
-      </form>
-        <div class="aplicarfiltro">
-          <button class="button aplicarfiltro" id="filtro">Aplicar</button>
-        </div>
-      </div>      
 
-      <div class="search">
-        <form action="/">
-          <input class="search-input" type="text" id="search" name="search" placeholder="Busque aqui...">
-        </form>
+        <abbr title="Carrinho">
+          <li><a href="#" id="bag">⠀</a></li>
+        </abbr>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-product">
+
+    <div class="product">
+
+      <div class="filters">
+        <div class="filtros">
+
+          <div class="titulo-filtro">
+            <h2 id="filtro">Filtrar por</h2>
+          </div>
+
+          <div class="checkboxs">
+            <h3>Tamanhos</h3>
+
+            <input class="checkbox" type="checkbox" id="grande">
+            <label class="label-checkbox" for="grande"> Grande</label>
+
+            <input class="checkbox" type="checkbox" id="medio">
+            <label class="label-checkbox" for="medio"> Médio</label>
+
+            <input class="checkbox" type="checkbox" id="pequeno">
+            <label class="label-checkbox" for="pequeno"> Pequeno</label>
+          </div>
+
+          <div class="checkboxs">
+            <h3>Essências</h3>
+
+            <input class="checkbox" type="checkbox" id="lavanda">
+            <label class="label-checkbox" for="lavanda"> Lavanda</label>
+
+            <input class="checkbox" type="checkbox" id="baunilha">
+            <label class="label-checkbox" for="baunilha"> Baunilha</label>
+
+            <input class="checkbox" type="checkbox" id="vanilla">
+            <label class="label-checkbox" for="vanilla"> Vanilla</label>
+
+            <input class="checkbox" type="checkbox" id="mellimao">
+            <label class="label-checkbox" for="mellimao"> Mel e Limão</label>
+
+            <input class="checkbox" type="checkbox" id="ervas">
+            <label class="label-checkbox" for="ervas"> Ervas</label>
+
+            <input class="checkbox" type="checkbox" id="coco">
+            <label class="label-checkbox" for="coco"> Coco</label>
+          </div>
+
+          <div class="valores">
+            <h3>Valores</h3>
+            <input type="range" id="valor" min="30" max="100" step="1" value="30">
+            <span>
+              <p>R$ 30</p>
+              <p>R$ 100</p>
+            </span>
+          </div>
+
+          <div class="filtrar">
+            <button class="botao" type="submit">Filtrar</button>
+          </div>
+        </div>
+
       </div>
 
-  </section>
-<script src="../js/script.js"></script>
+      <div class="produtos-grid">
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-sacola-serena.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Lavanda</h3>
+            <h3>R$ 30</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-serena-2.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Baunilha</h3>
+            <h3>R$ 40</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-serena-3.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Vanilla</h3>
+            <h3>R$ 60</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-serena-4.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Mel e Limão</h3>
+            <h3>R$ 100</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-serena-5.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Ervas</h3>
+            <h3>R$ 35</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+
+        <div class="produtos">
+          <div class="img-produto">
+            <img src="/img/produtos-img/vela-serena-6.png" alt="">
+          </div>
+          <div class="nome-produto">
+            <h3>Vela de Coco</h3>
+            <h3>R$ 50</h3>
+          </div>
+          <div class="legenda-produto">
+            <p>Descrição da vela especificando qual essencia e quantidade e se é dentro do copo de vidro ou não</p>
+          </div>
+          <div class="comprar">
+            <button class="botao" type="submit">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/script.js"></script>
 </body>

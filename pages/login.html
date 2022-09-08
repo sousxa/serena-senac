@@ -33,25 +33,39 @@
         </svg></a>
     </nav>
 
-    <main class="container">
-      <div class="box">
-        <h2 class="titulo-login">Entre na sua conta</h2>
-        <form action="">
-          <div class="input">
+    <main>
+      <form action="/">
+        <div class="fundo-box">
+          <div class="box-inputs">
 
-            <input class="mode-input" type="text" name="email" placeholder="E-mail" id="email" required >
-
-            <input class="mode-input" type="password" name="senha" id="senha" placeholder="Senha" required>
-          </div>
-          <div class="confirm">
-            <button class="button">Login</button>
-            <div class="cadastre">
-              <a class="links" href="cadastro.html">Cadastre-se</a>
-              <a class="links" href="./">Esqueceu a senha?</a>
+            <div class="titulo-inputs">
+              <h2 id="user">Entre na sua Conta</h2>
             </div>
-          </div>
-      </div>
+            <div class="email custom">
+              <input class="inputs" type="text" required id="email">
+              <label for="email">E-mail</label>
+            </div>
 
+            <div class="password custom">
+              <input class="inputs" type="password" required id="password" minlength="6">
+              <label for="password">Senha</label>
+            </div>
+
+
+            <button class="botao" type="submit">Login</button>
+
+            <div class="cd-es">
+              <div class="cadastro links">
+                <a href="./cadastro.html">Cadastre-se</a>
+              </div>
+
+              <div class="esqueceu links">
+                <a href="./">Esqueceu a senha?</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </form>
     </main>
 

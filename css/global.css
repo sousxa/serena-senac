@@ -11,7 +11,7 @@ p {
   margin: 0px;
 }
 
-ul {
+ul,li {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -24,5 +24,9 @@ img {
 }
 
 abbr{
+  text-decoration: none;
+}
+
+a{
   text-decoration: none;
 }
