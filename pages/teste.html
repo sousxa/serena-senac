@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#">
+
+    <div class="cep custom">
+      <input class="inputs" type="text" required id="cepc">
+      <label for="cepc"> CEP</label>
+      <div class="error" id="error">
+      </div>
+    </div>
+
+    <div class="end custom">
+      <input class="inputs" type="text" required id="endc">
+      <label for="endc">Endereço</label>
+    </div>
+
+    <div class="city custom">
+      <input class="inputs" type="text" required id="cityc">
+      <label for="cityc">Cidade / UF</label>
+    </div>
+
+    <div class="numberhome custom">
+      <input class="inputs" type="number" required id="numberhome-cadastro">
+      <label for="numberhome-cadastro">Número</label>
+    </div>
+
+    <div class="complemento custom">
+      <input class="inputs" type="text" required id="complemento-cadastro">
+      <label for="complemento-cadastro">Complemento</label>
+    </div>
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <script src="../js/cadastro.js"></script>
+
+</body>
+
+</html>

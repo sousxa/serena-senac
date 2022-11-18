@@ -34,52 +34,76 @@
     </nav>
 
     <main>
-      <form action="/">
+      <form class="form" id="form">
         <div class="fundo-box">
           <div class="box-inputs">
 
             <div class="titulo-inputs">
               <h2>Crie sua conta</h2>
             </div>
-            <div class="nome custom">
-              <input class="inputs" type="text" required id="nome">
-              <label for="nome">Nome completo</label>
-            </div>
+            <div class="gridcadastro">
+              <div class="nome custom">
+                <input class="inputs" type="text" required id="username">
+                <label class="invalid" for="username">Nome completo*</label>
+              </div>
 
-            <div class="email custom">
-              <input class="inputs" type="text" required id="email-cadastro">
-              <label for="email-cadastro">E-mail</label>
-            </div>
+              <div class="email custom">
+                <input class="inputs" type="text" required id="email-cadastro">
+                <label for="email-cadastro">E-mail*</label>
+              </div>
 
-            <div class="tell custom">
-              <input class="inputs" type="number" required id="tell-cadastro">
-              <label for="tell-cadastro">Telefone ou Whatsapp</label>
-            </div>
+              <div class="tell custom">
+                <input class="inputs" type="number" required id="telefone">
+                <label for="telefone">Telefone ou Whatsapp*</label>
+              </div>
 
-            <div class="cep custom">
-              <input class="inputs" type="number" required id="cep-cadastro">
-              <label for="cep-cadastro">CEP</label>
-            </div>
+              <div class="cep custom" id="cepcc">
+                <input class="inputs" type="text" required id="cepc">
+                <label for="cepc">CEP*</label>
+              </div>
 
-            <div class="password custom">
-              <input class="inputs" type="password" required id="pass-cadastro" minlength="6">
-              <label for="pass-cadastro">Criar senha</label>
-            </div>
+              <div class="end custom">
+                <input class="inputs" type="text" required id="endc">
+                <label for="endc">Endereço*</label>
+              </div>
 
-            <div class="pass-confirm custom">
-              <input class="inputs" type="password" required id="pass-confirm-cadastro">
-              <label for="pass-confirm-cadastro">Confirmar senha</label>
+              <div class="city custom">
+                <input class="inputs" type="text" required id="cityc">
+                <label for="cityc">Cidade / UF*</label>
+              </div>
+
+              <div class="numberhome custom">
+                <input class="inputs" type="number" required id="numberhome">
+                <label for="numberhome">Número*</label>
+              </div>
+
+              <div class="complemento custom">
+                <input class="inputs" type="text" required id="complementoc">
+                <label for="complementoc">Complemento*</label>
+              </div>
+
+              <div class="password custom">
+                <input class="inputs" type="password" required id="pass-cadastro">
+                <label for="pass-cadastro">Criar senha*</label>
+              </div>
+
+              <div class="pass-confirm custom">
+                <input class="inputs" type="password" required id="pass-confirm-cadastro">
+                <label for="pass-confirm-cadastro">Confirmar senha*</label>
+              </div>
             </div>
 
             <div class="checkbox-box">
               <div class="termos">
                 <input type="checkbox" class="checkbox" id="termos" name="termos">
-                <label for="termos" class="label-checkbox">Li e aceito os <a class="terms-links" href="./"> termos de
+                <label for="termos" class="label-checkbox">Li e aceito os <a class="terms-links" target="_blank"
+                    href="./termo.html">
+                    termos de
                     serviço.</a></label>
               </div>
             </div>
 
-            <button class="botao" type="submit" onclick="window.location.href='login.html'">Cadastrar</button>
+            <button class="botao" type="submit">Cadastrar</button>
 
 
 
@@ -90,5 +114,7 @@
 
 
   </header>
+
+  <script src="../js/cadastro.js"></script>
 
 </body>

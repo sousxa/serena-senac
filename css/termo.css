@@ -1,0 +1,28 @@
+.termo-texto{
+  display: grid;
+  place-content: center;
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 300px;
+}
+
+.title-1{
+  color: var(--cor-1);
+}
+
+.title-2{
+  color: var(--cor-1);
+}
+
+.text-termos{
+  color: var(--cor-1);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: 80ch;
+  text-align: left;
+}
+
+.button{
+  width: 100px;
+}

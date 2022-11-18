@@ -51,3 +51,24 @@
   width: 20px;
   height: 15px;
 }
+
+.gridcadastro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#error {
+  border-color: var(--cor-error);
+  color: var(--cor-error);
+  position: absolute;
+  top: 75px;
+}
+
+span.error.active{
+  color: var(--cor-error);
+}
+.error:focus,.error:valid{
+  color: var(--cor-error);
+  border-color: var(--cor-error);
+}
